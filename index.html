@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   <title>Видеоплеер</title>
   <meta charset="utf-8">
   <link rel="icon" href="static/favicon.ico">
   <link rel="stylesheet" href="static/css/font-awesome.min.css">
-  <style type="text/css">
+  <style>
     .player {
       width: 800px;
       height: 600px;
@@ -38,6 +38,7 @@
     }
   </style>
 </head>
+
 <body>
   <div id="player" class="player">
     <div class="js-video-container video-container"></div>
@@ -60,13 +61,11 @@
       </button>
     </div>
   </div>
+
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
   <script src="static/js/player.js"></script>
-
-  <script type="text/javascript">
-    createPlayer({elementId: 'player'});
-  </script>
+  <script>createPlayer({elementId: 'player'});</script>
 
 </body>
 </html>
