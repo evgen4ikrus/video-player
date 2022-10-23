@@ -18,6 +18,7 @@
     .control-panel {
       background-color: black;
       flex-grow: 0;
+      display: flex;
     }
     .control-panel-button {
         background-color: transparent;
@@ -31,7 +32,9 @@
       color: white;
       font-size: 150%;
     }
-
+    .empty-div {
+        flex-grow: 1;
+    }
   </style>
 </head>
 <body>
@@ -49,6 +52,10 @@
       </button>
       <button class="js-mute-button control-panel-button">
         <i class="fa fa-volume-up control-panel-icon" aria-hidden="true"></i>
+      </button>
+      <div class="empty-div"></div>
+      <button class="js-fullscreen-button control-panel-button">
+        <i class="fa fa-expand control-panel-icon" aria-hidden="true"></i>
       </button>
     </div>
   </div>
