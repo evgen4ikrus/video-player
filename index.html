@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <link rel="icon" href="static/favicon.ico">
   <link rel="stylesheet" href="static/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <style>
     .player {
       width: 728px;
@@ -23,18 +26,26 @@
       align-items: center;
     }
     .control-panel-button {
-        background-color: transparent;
-        border-style: none;
-        cursor: pointer;
-        width: 32px;
-        height: 32px;
-        margin: 1px;
-        color: white;
-        font-size: 110%;
-        margin-bottom: 5px;
+      background-color: transparent;
+      border-style: none;
+      cursor: pointer;
+      width: 32px;
+      height: 32px;
+      margin: 1px;
+      color: white;
+      font-size: 110%;
+      margin-bottom: 5px;
+    }
+    .control-panel-time {
+      font-family: 'Roboto', sans-serif;
+      font-size: 14.5px;
+      color: white;
+      flex-grow: 1;
+      display: flex;
+      margin-bottom: 2px;
     }
     .empty-div {
-        flex-grow: 1;
+      flex-grow: 1;
     }
   </style>
 </head>
@@ -55,7 +66,11 @@
       <button class="js-mute-button control-panel-button">
         <i class="fa fa-volume-up" aria-hidden="true"></i>
       </button>
-      <div class="empty-div"></div>
+      <div class="control-panel-time">
+        <span class="js-current-time"></span>
+        <div class="empty-div"></div>
+        <span class="js-duration"></span>
+      </div>
       <button class="js-fullscreen-button control-panel-button">
         <i class="fa fa-expand" aria-hidden="true"></i>
       </button>
