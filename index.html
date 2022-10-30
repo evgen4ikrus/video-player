@@ -44,8 +44,26 @@
       display: flex;
       margin-bottom: 2px;
     }
-    .empty-div {
+    .control-panel-progress {
       flex-grow: 1;
+      background-color: black;
+      display: flex;
+      margin-inline: 3px;
+    }
+    .control-panel-slider {
+      background-color: red;
+      height: 5px;
+      margin: 6px;
+      border-radius: 3px;
+    }
+    .control-panel-dot {
+      height: 7px;
+      width: 7px;
+      background-color: red;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-top: 3px;
+      margin-left: -18px;
     }
   </style>
 </head>
@@ -68,7 +86,10 @@
       </button>
       <div class="control-panel-time">
         <span class="js-current-time"></span>
-        <div class="empty-div"></div>
+        <div class="js-progress control-panel-progress">
+          <div class="js-progress-slider control-panel-slider"></div>
+          <span class="control-panel-dot"></span>
+        </div>
         <span class="js-duration"></span>
       </div>
       <button class="js-fullscreen-button control-panel-button">
